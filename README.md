@@ -12,7 +12,7 @@ Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedi
   - `nome` (string)
   - `tipo` (exploração, transporte, combate)
   - `capacidadeTripulantes` (inteiro)
-  - `nivelEnergia` (float, entre 0 e 100)
+  - `nivelEnergia` (int, entre 0 e 100)
 
 - **Tripulante**: Um astronauta ou robô com os atributos:
   - `nome` (string)
@@ -39,7 +39,7 @@ Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedi
 ### Funcionalidades
 
 - Criar, atualizar e listar `Naves`, `Tripulantes`, `Missões` e `Relatórios`.
-- Gerar relatórios formatados usando funções nativas de strings do PHP (ex.: `strtoupper()`, `substr()`, `str_replace()`, `date()`, `trim()`) para:
+- Gerar relatórios formatados usando pelo menos duas funções nativas de strings do PHP (ex.: `strtoupper()`, `substr()`, `str_replace()`, `date()`, `trim()`) para:
   - Capitalizar nomes de planetas (ex.: "mars" → "Mars").
   - Truncar descrições longas (máximo 100 caracteres).
   - Formatar datas no padrão 'd/m/Y H:i'.
@@ -62,7 +62,7 @@ Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedi
 - Defina **interfaces** para garantir contratos (ex.: `Reportable` para classes que geram relatórios).
 - Crie **classes abstratas** para fatores comuns (ex.: uma classe abstrata `SpaceEntity` para `Nave` e `Tripulante`).
 - Implemente **getters e setters** para todos os atributos privados, com validação nos setters (ex.: lançar exceção se o `nivelEnergia` for inválido).
-- Use **funções nativas de manipulação de strings** do PHP para formatar relatórios e outros dados.
+- Use pelo menos duas **funções nativas de manipulação de strings** do PHP para formatar relatórios e outros dados.
 - Documente **todas as classes, métodos e propriedades** com **DocBlocks** detalhados.
 - Use **Composer** para gerenciar as classes, interfaces e traits, configurando um arquivo `composer.json` com autoload PSR-4.
 
@@ -73,19 +73,14 @@ Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedi
 
 ### Estrutura do Projeto
 
-- Organize o projeto em pastas:
-  - `src/` (código-fonte)
-  - `tests/` (testes unitários, se aplicável)
-  - `docs/` (documentação)
 - Configure o autoload no `composer.json` para carregar automaticamente as classes, interfaces e traits.
-- Forneça um arquivo `README.md` no projeto com instruções para rodar o sistema e uma explicação breve de cada classe.
 
 ---
 
 ## Requisitos Não-Funcionais
 
 - **Código limpo**: Siga as convenções **PSR-12** para estilo de código.
-- **Documentação**: Use DocBlocks para descrever o propósito de classes, métodos, parâmetros, retornos e exceções.
+- **Documentação**: Use DocBlocks para descrever o propósito de classes, métodos, parâmetros e retornos.
 - **Modularidade**: As classes devem ter responsabilidades únicas (princípio SOLID).
 - **Validação**: Trate erros com exceções (ex.: lançar uma exceção se o `nivelEnergia` da nave for inválido).
 - **Portabilidade**: O sistema deve rodar em qualquer ambiente com PHP 8.0 ou superior, com dependências gerenciadas pelo Composer.
@@ -97,7 +92,6 @@ Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedi
 1. **Código-fonte do projeto**, incluindo:
    - Arquivos PHP com as classes, interfaces, traits e lógica implementada.
    - Arquivo `composer.json` configurado com autoload PSR-4.
-   - Arquivo `README.md` com instruções de instalação e uso.
 2. **Imagem do diagrama de classes** (PNG ou JPG) criado no Astah.
 3. **Documentação** via DocBlocks em todos os elementos do código.
 
@@ -113,7 +107,7 @@ O projeto será avaliado com base nos seguintes critérios:
 - Os relacionamentos (1:N, N:N) estão corretamente modelados e implementados.
 
 ### Uso de Conceitos de POO (30%)
-- Implementação correta de classes abstratas, interfaces, traits, métodos/propriedades estáticas, getters/setters e métodos mágicos (`__get`, `__set`, `__toString`, `__invoke`).
+- Implementação correta de classes abstratas, interfaces, traits, métodos/propriedades estáticas e getters/setters.
 - Uso adequado de union types, strict types e match expression.
 - Aplicação correta de herança, polimorfismo e encapsulamento.
 
@@ -126,8 +120,7 @@ O projeto será avaliado com base nos seguintes critérios:
 ### Documentação e Diagrama (20%)
 - DocBlocks completos e bem redigidos para todas as classes, métodos e propriedades.
 - Diagrama de classes claro, com todos os relacionamentos, heranças e interfaces representados.
-- `README.md` claro, com instruções de instalação e uso.
-
+- 
 ---
 
 ## Instruções para Submissão
