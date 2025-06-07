@@ -1,3 +1,5 @@
+**AVALIADO 97/100**
+
 ## Descrição do Projeto
 
 Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedições intergalácticas. O sistema deve controlar `Nave Espacial`, `Tripulante`, `Missão` e `Relatório de Exploração`, com foco em abstração, modularidade e boas práticas de programação orientada a objetos. O objetivo é criar um sistema robusto que demonstre domínio dos conceitos de POO, manipulação de strings com funções nativas do PHP e documentação clara, incluindo um diagrama de classes.
