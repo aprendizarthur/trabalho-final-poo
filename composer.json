@@ -1,0 +1,17 @@
+{
+    "name": "arthu/trabalho-final-poo",
+    "autoload": {
+        "psr-4": {
+            "App\\Classes\\": "App/Classes/",
+            "App\\Interfaces\\" : "App/Interfaces",
+            "App\\Traits\\" : "App/Traits/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arthur",
+            "email": "aprendizadoarthur@gmail.com"
+        }
+    ],
+    "require": {}
+}
