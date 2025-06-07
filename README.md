@@ -12,7 +12,7 @@ Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedi
   - `nome` (string)
   - `tipo` (exploração, transporte, combate)
   - `capacidadeTripulantes` (inteiro)
-  - `nivelEnergia` (int, entre 0 e 100)
+  - `nivelEnergia` (inteiro, entre 0 e 100)
 
 - **Tripulante**: Um astronauta ou robô com os atributos:
   - `nome` (string)
@@ -39,10 +39,9 @@ Você deve desenvolver um sistema em PHP orientado a objetos que gerencie expedi
 ### Funcionalidades
 
 - Criar, atualizar e listar `Naves`, `Tripulantes`, `Missões` e `Relatórios`.
-- Gerar relatórios formatados usando pelo menos duas funções nativas de strings do PHP (ex.: `strtoupper()`, `substr()`, `str_replace()`, `date()`, `trim()`) para:
+- Gerar relatórios formatados usando pelo menos duas funções nativas de strings do PHP (ex.: `strtoupper()`, `substr()`, `str_replace()`, `date()`, `trim()`) para por exemplo:
   - Capitalizar nomes de planetas (ex.: "mars" → "Mars").
   - Truncar descrições longas (máximo 100 caracteres).
-  - Formatar datas no padrão 'd/m/Y H:i'.
 - Validar dados:
   - `nivelEnergia` da nave deve estar entre 0 e 100.
   - `nivelExperiencia` do tripulante deve estar entre 1 e 10.
